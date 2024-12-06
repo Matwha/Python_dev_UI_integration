@@ -1,0 +1,95 @@
+# Node.js dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Build directories and artifacts
+dist/
+build/
+out/
+.eslintcache
+.vite/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+*.lock
+
+# TypeScript files
+*.tsbuildinfo
+
+# Editor and IDE settings
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Package management
+package-lock.json
+yarn.lock
+.pnpm-debug.log
+
+# Tailwind CSS
+.tailwind/
+
+# React / Next.js build files
+.next/
+.cache/
+
+# Project-specific files
+PythonDriverDevelopmentTool/node_modules/
+PythonDriverDevelopmentTool/.env
+PythonDriverDevelopmentTool/dist/
+project/node_modules/
+project/.env
+project/dist/
+
+# Miscellaneous
+*.tmp
+*.bak
+*.old
+*.swp
+*.swo
+*.backup
+
+# Specific project-generated files
+project/.bolt/
+project/.bolt/*
+project/.bolt/prompt
+project/.gitignore
+project/eslint.config.js
+project/tailwind.config.js
+
+# Ignore all types of files generated from IDE, build, and temporary system processes
+*.js.map
+*.css.map
+*.ts.map
+*.tsx.map
+*.jsx.map
+*.d.ts
+
+# Ignore React Typescript artifacts
+*.jsx.map
+*.tsx.map
+
+# Ignore compiled files if accidentally included
+*.js
+*.js.map
+*.css
+*.css.map
+
+# Ignore Visual Studio Code Workspace Data
+.code-workspace
+*.workspace.json
+
