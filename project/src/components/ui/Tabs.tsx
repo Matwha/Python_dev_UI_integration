@@ -9,17 +9,16 @@ interface TabsProps {
 
 export const Tabs: React.FC<TabsProps> = ({ tabs, activeTab, onTabChange }) => {
   return (
-    <div className="flex space-x-1 bg-black/40 p-1.5 rounded-lg backdrop-blur-sm border border-yellow-400/10">
+    <div className="flex space-x-1 bg-gray-900 p-1 rounded-lg">
       {tabs.map((tab) => (
         <button
           key={tab.id}
           onClick={() => onTabChange(tab.id)}
           className={clsx(
-            'px-4 py-2 rounded-md text-sm font-medium transition-all duration-200',
-            'hover:bg-yellow-400/5 hover:shadow-[0_0_15px_rgba(250,204,21,0.1)]',
+            'px-4 py-2 rounded-md text-sm font-medium transition-colors',
             activeTab === tab.id
-              ? 'bg-yellow-400/10 text-yellow-400 shadow-[0_0_15px_rgba(250,204,21,0.15)]'
-              : 'text-yellow-400/60'
+              ? 'bg-yellow-400 text-black'
+              : 'text-yellow-400 hover:bg-yellow-400/10'
           )}
         >
           {tab.label}

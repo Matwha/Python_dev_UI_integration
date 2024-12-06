@@ -31,8 +31,8 @@ const Login: React.FC = () => {
   };
 
   return (
-    <div className="min-h-screen bg-black bg-honeycomb bg-[length:28px_50px] flex items-center justify-center">
-      <div className="w-full max-w-md p-8 bg-gray-900/95 rounded-lg border border-yellow-400/20">
+    <div className="min-h-screen bg-black bg-honeycomb flex items-center justify-center">
+      <div className="w-full max-w-md p-8 bg-gray-900 rounded-lg border border-yellow-400/20">
         <div className="flex flex-col items-center mb-8">
           <Shield className="w-12 h-12 text-yellow-400 mb-4" />
           <h1 className="text-2xl font-bold text-yellow-400">SCADA ATE Login</h1>

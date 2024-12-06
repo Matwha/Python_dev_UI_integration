@@ -14,8 +14,8 @@ const Layout: React.FC = () => {
   };
 
   return (
-    <div className="min-h-screen bg-black bg-honeycomb bg-[length:28px_50px] text-yellow-400">
-      <nav className="fixed top-0 left-0 h-full w-20 bg-gray-900/95 border-r border-yellow-400/20">
+    <div className="min-h-screen bg-black bg-honeycomb text-yellow-400">
+      <nav className="fixed top-0 left-0 h-full w-20 bg-gray-900 border-r border-yellow-400/20">
         <div className="flex flex-col items-center gap-8 py-8">
           <Link
             to="/"
@@ -52,7 +52,7 @@ const Layout: React.FC = () => {
         </div>
       </nav>
       <div className="ml-20">
-        <header className="bg-gray-900/95 border-b border-yellow-400/20 p-4">
+        <header className="bg-gray-900 border-b border-yellow-400/20 p-4">
           <div className="flex justify-between items-center">
             <h1 className="text-xl font-bold">SCADA ATE System</h1>
             <div className="flex items-center gap-4">

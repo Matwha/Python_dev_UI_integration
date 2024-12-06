@@ -3,17 +3,13 @@ import { useDeviceStore } from '../store/deviceStore';
 import { Button } from '../components/ui/Button';
 import { Tabs } from '../components/ui/Tabs';
 import { StateMachineDiagram } from '../components/diagrams/StateMachineDiagram';
-import { XStateVisualizer } from '../components/diagrams/XStateVisualizer';
 import { DeviceDriverConfig } from '../components/diagrams/DeviceDriverConfig';
 import { DriverBuilder } from '../components/diagrams/DriverBuilder';
 import { Plus } from 'lucide-react';
-import { testMachine } from '../machines/testMachine';
-import { createActor } from 'xstate';
 
 const TABS = [
   { id: 'devices', label: 'Devices' },
   { id: 'state-machine', label: 'State Machine' },
-  { id: 'xstate', label: 'XState Visualizer' },
   { id: 'driver-config', label: 'Driver Configuration' },
   { id: 'driver-builder', label: 'Driver Builder' },
 ];
@@ -21,7 +17,6 @@ const TABS = [
 const Configuration: React.FC = () => {
   const [activeTab, setActiveTab] = useState('devices');
   const devices = useDeviceStore((state) => state.devices);
-  const [actor] = useState(() => createActor(testMachine).start());
 
   return (
     <div className="space-y-6">
@@ -69,7 +64,6 @@ const Configuration: React.FC = () => {
         )}
 
         {activeTab === 'state-machine' && <StateMachineDiagram />}
-        {activeTab === 'xstate' && <XStateVisualizer actor={actor} />}
         {activeTab === 'driver-config' && <DeviceDriverConfig />}
         {activeTab === 'driver-builder' && <DriverBuilder />}
       </div>
