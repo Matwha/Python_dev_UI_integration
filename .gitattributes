@@ -1,1 +1,17 @@
-# Line ending configuration
+# Normalize line endings for text files
+* text=auto
+
+# Enforce LF endings for specific files
+*.ts text eol=lf
+*.tsx text eol=lf
+*.json text eol=lf
+*.js text eol=lf
+*.css text eol=lf
+*.html text eol=lf
+*.md text eol=lf
+
+# Keep binary files as-is
+*.png binary
+*.jpg binary
+*.gif binary
+*.zip binary
